@@ -10,7 +10,7 @@ same directory. Configure and validate from the project directory:
 
 ```sh
 cmake --fresh -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug \
-  -DQt6_DIR="$HOME/Qt/6.8.3/macos/lib/cmake/Qt6"
+  -DQt6_DIR="/Volumes/Storage/Qt/6.8.3/macos/lib/cmake/Qt6"
 cmake --build build
 ctest --test-dir build --output-on-failure --no-tests=error
 ```
