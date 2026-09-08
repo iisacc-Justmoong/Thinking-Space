@@ -13,11 +13,17 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
+if(APPLE AND TARGET WrapOpenGL::WrapOpenGL)
+    # Qt 6.8's OpenGL wrapper still advertises AGL, which current SDKs omit.
+    # The arm64 Widgets application does not call the legacy AGL API.
+    get_target_property(_opengl_links WrapOpenGL::WrapOpenGL INTERFACE_LINK_LIBRARIES)
+    list(FILTER _opengl_links EXCLUDE REGEX "(^|[ /])AGL($|[ /.])|AGL\\.framework")
+    set_property(TARGET WrapOpenGL::WrapOpenGL PROPERTY INTERFACE_LINK_LIBRARIES "${_opengl_links}")
+endif()
+
 add_executable(Thinking_Space main.cpp)
 target_link_libraries(Thinking_Space
-        PRIVATE Qt6::Quick
-        Qt::Core
+        PRIVATE Qt::Core
         Qt::Gui
         Qt::Widgets
 )
-
