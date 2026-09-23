@@ -21,7 +21,7 @@ if(APPLE AND TARGET WrapOpenGL::WrapOpenGL)
     set_property(TARGET WrapOpenGL::WrapOpenGL PROPERTY INTERFACE_LINK_LIBRARIES "${_opengl_links}")
 endif()
 
-add_executable(Thinking_Space main.cpp)
+add_executable(Thinking_Space src/main.cpp)
 target_link_libraries(Thinking_Space
         PRIVATE Qt::Core
         Qt::Gui

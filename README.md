@@ -23,3 +23,7 @@ ctest --test-dir build --output-on-failure --no-tests=error
 
 No automated application tests are currently registered. The final command
 reports that absence as an error instead of claiming a passing test suite.
+
+## Source layout
+
+Implementation files and their headers live together under `src/`. Existing feature and platform subdirectories retain their responsibilities. Build configuration, tests, documentation, resources, and maintenance scripts remain at the project root. Configure and build using the repository-local `build/` directory.
