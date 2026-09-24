@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.31)
+include("${CMAKE_CURRENT_LIST_DIR}/cmake/single-app/Defaults.cmake")
 project(Thinking_Space)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -22,8 +23,18 @@ if(APPLE AND TARGET WrapOpenGL::WrapOpenGL)
 endif()
 
 add_executable(Thinking_Space src/main.cpp)
+set_target_properties(Thinking_Space PROPERTIES
+    MACOSX_BUNDLE_GUI_IDENTIFIER "com.iisacc.thinkingspace"
+    MACOSX_BUNDLE_BUNDLE_NAME "Thinking Space")
 target_link_libraries(Thinking_Space
         PRIVATE Qt::Core
         Qt::Gui
         Qt::Widgets
 )
+
+# Apply after Qt/LVRS finalizers, which may enable bundles for test targets.
+include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/single-app/SingleApp.cmake")
+product_plain_executables("${CMAKE_SOURCE_DIR}" Thinking_Space)
+cmake_language(DEFER CALL product_single_app Thinking_Space "")
+
+product_deploy_app(Thinking_Space "")
