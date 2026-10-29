@@ -1,0 +1,256 @@
+{
+  "format": "iisacc.agent-document",
+  "schema_version": 1,
+  "document_id": "urn:iisacc:document:a5d1031a36dfbeff84134a17265b93c603874587a14242d2fdc7c653ea7a7718",
+  "project": {
+    "id": "urn:iisacc:project:Product%2FThinking%20Space",
+    "name": "Thinking Space",
+    "root": "Product/Thinking Space",
+    "kind": "application"
+  },
+  "source": {
+    "path": "README.md",
+    "sha256": "c06e5e004e9e1fb589145c988c9696e2020113b4cdc73cb8ef48344a57bce333",
+    "bytes": 1865,
+    "line_count": 38,
+    "encoding": "utf-8",
+    "language": "en"
+  },
+  "document": {
+    "title": "Thinking Space",
+    "role": "overview",
+    "authority": "markdown_source"
+  },
+  "blocks": [
+    {
+      "id": "b000001",
+      "kind": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "raw": "# Thinking Space\n",
+      "level": 1,
+      "title": "Thinking Space"
+    },
+    {
+      "id": "b000002",
+      "kind": "blank",
+      "start_line": 2,
+      "end_line": 2,
+      "raw": "\n"
+    },
+    {
+      "id": "b000003",
+      "kind": "paragraph",
+      "start_line": 3,
+      "end_line": 12,
+      "raw": "The current project is a Qt 6 Widgets application scaffold. It does not yet\nconsume any workspace SDK package. SDK source projects live in `../../SDK`,\nand installed packages live under `$HOME/.local/SDK`; add a package dependency\nonly when application code actually uses it.\nThe executable links the Core, Gui, and Widgets modules found by CMake.\nIt uses no Qt Quick API, so a fresh configuration does not require a\npreviously cached or indirectly imported `Qt6::Quick` target.\nOn macOS, CMake removes the redundant legacy AGL entry from Qt 6.8's\nOpenGL wrapper so SDKs without AGL can link the app. The Widgets executable keeps\nits normal AppKit and OpenGL dependencies.\n"
+    },
+    {
+      "id": "b000004",
+      "kind": "blank",
+      "start_line": 13,
+      "end_line": 13,
+      "raw": "\n"
+    },
+    {
+      "id": "b000005",
+      "kind": "paragraph",
+      "start_line": 14,
+      "end_line": 15,
+      "raw": "Keep all generated CMake output in `build/`. The CLion Debug profile uses that\nsame directory. Configure and validate from the project directory:\n"
+    },
+    {
+      "id": "b000006",
+      "kind": "blank",
+      "start_line": 16,
+      "end_line": 16,
+      "raw": "\n"
+    },
+    {
+      "id": "b000007",
+      "kind": "fenced_code",
+      "start_line": 17,
+      "end_line": 22,
+      "raw": "```sh\ncmake --fresh -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug \\\n  -DQt6_DIR=\"/Volumes/Storage/Qt/6.8.3/macos/lib/cmake/Qt6\"\ncmake --build build\nctest --test-dir build --output-on-failure --no-tests=error\n```\n",
+      "language": "sh",
+      "code": "cmake --fresh -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug \\\n  -DQt6_DIR=\"/Volumes/Storage/Qt/6.8.3/macos/lib/cmake/Qt6\"\ncmake --build build\nctest --test-dir build --output-on-failure --no-tests=error\n",
+      "closed": true
+    },
+    {
+      "id": "b000008",
+      "kind": "blank",
+      "start_line": 23,
+      "end_line": 23,
+      "raw": "\n"
+    },
+    {
+      "id": "b000009",
+      "kind": "paragraph",
+      "start_line": 24,
+      "end_line": 25,
+      "raw": "No automated application tests are currently registered. The final command\nreports that absence as an error instead of claiming a passing test suite.\n"
+    },
+    {
+      "id": "b000010",
+      "kind": "blank",
+      "start_line": 26,
+      "end_line": 26,
+      "raw": "\n"
+    },
+    {
+      "id": "b000011",
+      "kind": "heading",
+      "start_line": 27,
+      "end_line": 27,
+      "raw": "## Source layout\n",
+      "level": 2,
+      "title": "Source layout"
+    },
+    {
+      "id": "b000012",
+      "kind": "blank",
+      "start_line": 28,
+      "end_line": 28,
+      "raw": "\n"
+    },
+    {
+      "id": "b000013",
+      "kind": "paragraph",
+      "start_line": 29,
+      "end_line": 29,
+      "raw": "Implementation files and their headers live together under `src/`. Existing feature and platform subdirectories retain their responsibilities. Build configuration, tests, documentation, resources, and maintenance scripts remain at the project root. Configure and build using the repository-local `build/` directory.\n"
+    },
+    {
+      "id": "b000014",
+      "kind": "blank",
+      "start_line": 30,
+      "end_line": 30,
+      "raw": "\n"
+    },
+    {
+      "id": "b000015",
+      "kind": "html",
+      "start_line": 31,
+      "end_line": 31,
+      "raw": "<!-- workspace-docs:readme:start -->\n"
+    },
+    {
+      "id": "b000016",
+      "kind": "heading",
+      "start_line": 32,
+      "end_line": 32,
+      "raw": "## Documentation entry points\n",
+      "level": 2,
+      "title": "Documentation entry points"
+    },
+    {
+      "id": "b000017",
+      "kind": "blank",
+      "start_line": 33,
+      "end_line": 33,
+      "raw": "\n"
+    },
+    {
+      "id": "b000018",
+      "kind": "list",
+      "start_line": 34,
+      "end_line": 37,
+      "raw": "- Human overview: this English `README.md`.\n- Agent instructions: [AGENT.md](AGENT.md).\n- Human documentation: [documentation index](docs/README.md).\n- Structured agent documentation: [agent index](docs/agent-index.json).\n",
+      "items": [
+        {
+          "marker": "-",
+          "text": "Human overview: this English `README.md`.",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Agent instructions: [AGENT.md](AGENT.md).",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Human documentation: [documentation index](docs/README.md).",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Structured agent documentation: [agent index](docs/agent-index.json).",
+          "checked": null
+        }
+      ]
+    },
+    {
+      "id": "b000019",
+      "kind": "html",
+      "start_line": 38,
+      "end_line": 38,
+      "raw": "<!-- workspace-docs:readme:end -->\n"
+    }
+  ],
+  "outline": [
+    {
+      "block_id": "b000001",
+      "parent_id": null,
+      "level": 1,
+      "title": "Thinking Space",
+      "anchor": "thinking-space",
+      "start_line": 1
+    },
+    {
+      "block_id": "b000011",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Source layout",
+      "anchor": "source-layout",
+      "start_line": 27
+    },
+    {
+      "block_id": "b000016",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Documentation entry points",
+      "anchor": "documentation-entry-points",
+      "start_line": 32
+    }
+  ],
+  "indexes": {
+    "directive_candidates": [],
+    "commands": [
+      {
+        "block_id": "b000007",
+        "language": "sh",
+        "code": "cmake --fresh -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug \\\n  -DQt6_DIR=\"/Volumes/Storage/Qt/6.8.3/macos/lib/cmake/Qt6\"\ncmake --build build\nctest --test-dir build --output-on-failure --no-tests=error\n"
+      }
+    ],
+    "links": [
+      {
+        "block_id": "b000018",
+        "label": "AGENT.md",
+        "target": "AGENT.md",
+        "kind": "relative",
+        "line": 35
+      },
+      {
+        "block_id": "b000018",
+        "label": "documentation index",
+        "target": "docs/README.md",
+        "kind": "relative",
+        "line": 36
+      },
+      {
+        "block_id": "b000018",
+        "label": "agent index",
+        "target": "docs/agent-index.json",
+        "kind": "relative",
+        "line": 37
+      }
+    ],
+    "tables": []
+  },
+  "provenance": {
+    "generator": "workspace-docs",
+    "version": "1.0.0",
+    "profile": "lossless-blocks-v1",
+    "derived": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "format": "iisacc.agent-document-index",
+  "schema_version": 1,
+  "project": {
+    "id": "urn:iisacc:project:Product%2FThinking%20Space",
+    "name": "Thinking Space",
+    "root": "Product/Thinking Space",
+    "kind": "application"
+  },
+  "documentation_root": "docs",
+  "agent_schema": "docs/agent-document.schema.json",
+  "documents": [
+    {
+      "document_id": "urn:iisacc:document:922d8db032009f4387076de1baa51614866cffbd4ee1ffad3c3675bd3ac4774c",
+      "source": "AGENT.md",
+      "agent_json": "docs/entrypoints/AGENT.agent.json",
+      "source_sha256": "042701272e31743996a008c14011641205fc73b64a50e6803fc7a004866c479e",
+      "role": "instructions"
+    },
+    {
+      "document_id": "urn:iisacc:document:a5d1031a36dfbeff84134a17265b93c603874587a14242d2fdc7c653ea7a7718",
+      "source": "README.md",
+      "agent_json": "docs/entrypoints/README.agent.json",
+      "source_sha256": "c06e5e004e9e1fb589145c988c9696e2020113b4cdc73cb8ef48344a57bce333",
+      "role": "overview"
+    },
+    {
+      "document_id": "urn:iisacc:document:62b5ff61b7044e9d038350e3a76f42afeb713e6017e0af5e4d9515c97933d796",
+      "source": "docs/README.md",
+      "agent_json": "docs/README.agent.json",
+      "source_sha256": "719da99d75b70ec9b879ca7bb6c946f95a5ad86b191ea36ec0ed55d22f27fc3c",
+      "role": "overview"
+    },
+    {
+      "document_id": "urn:iisacc:document:eb6bc0e5c16355316f9339544961b7a424ee188e4a804a6b0f8b34414a52c1bb",
+      "source": "docs/SingleAppBuild.md",
+      "agent_json": "docs/SingleAppBuild.agent.json",
+      "source_sha256": "3700ea136bc8b7e0c1a884161e2132f88064c60e61d228ac316562eca3447423",
+      "role": "guide"
+    },
+    {
+      "document_id": "urn:iisacc:document:3a05138cea909da9b0f57569bd9ed1fcf4b4e20723866cdad675b76295d80b72",
+      "source": "docs/documentation-structure.md",
+      "agent_json": "docs/documentation-structure.agent.json",
+      "source_sha256": "dc2db200107a5ee78330a5de5dc5c8bf8ab8671f91734be896b00548f36193d4",
+      "role": "guide"
+    }
+  ],
+  "layout": {
+    "human_entry": "README.md",
+    "agent_entry": "AGENT.md",
+    "human_format": "markdown",
+    "agent_format": "structured_json",
+    "source_authority": "markdown"
+  },
+  "provenance": {
+    "generator": "workspace-docs",
+    "version": "1.0.0",
+    "profile": "lossless-blocks-v1",
+    "derived": true
+  }
+}
