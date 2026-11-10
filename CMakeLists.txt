@@ -38,3 +38,11 @@ product_plain_executables("${CMAKE_SOURCE_DIR}" Thinking_Space)
 cmake_language(DEFER CALL product_single_app Thinking_Space "")
 
 product_deploy_app(Thinking_Space "")
+
+include(CTest)
+if(BUILD_TESTING)
+    find_package(Python3 REQUIRED COMPONENTS Interpreter)
+    add_test(NAME ThinkingSpace.DeployReport
+        COMMAND "${Python3_EXECUTABLE}" -B -m unittest discover
+                -s "${CMAKE_CURRENT_SOURCE_DIR}/tests" -p test_deploy_report.py)
+endif()

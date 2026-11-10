@@ -2,3 +2,10 @@
 /cmake-build-*/
 /.idea/
 .DS_Store
+
+/resources/.recovery/
+/resources/.state/
+
+.iisacc-temporary.lock
+
+.*.iisacc-preview
