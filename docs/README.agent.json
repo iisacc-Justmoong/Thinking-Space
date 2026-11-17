@@ -10,9 +10,9 @@
   },
   "source": {
     "path": "docs/README.md",
-    "sha256": "719da99d75b70ec9b879ca7bb6c946f95a5ad86b191ea36ec0ed55d22f27fc3c",
-    "bytes": 628,
-    "line_count": 14,
+    "sha256": "2ed8c9c905b65f1253ac01ac9ef9fc3539fda79f71e6b5f812aaf50f6b0e6473",
+    "bytes": 709,
+    "line_count": 15,
     "encoding": "utf-8",
     "language": "en"
   },
@@ -79,8 +79,8 @@
       "id": "b000008",
       "kind": "table",
       "start_line": 8,
-      "end_line": 13,
-      "raw": "| Document | Agent JSON |\n| --- | --- |\n| [`AGENT.md`](../AGENT.md) | [JSON](entrypoints/AGENT.agent.json) |\n| [`README.md`](../README.md) | [JSON](entrypoints/README.agent.json) |\n| [`docs/SingleAppBuild.md`](SingleAppBuild.md) | [JSON](SingleAppBuild.agent.json) |\n| [`docs/documentation-structure.md`](documentation-structure.md) | [JSON](documentation-structure.agent.json) |\n",
+      "end_line": 14,
+      "raw": "| Document | Agent JSON |\n| --- | --- |\n| [`AGENT.md`](../AGENT.md) | [JSON](entrypoints/AGENT.agent.json) |\n| [`LICENSING.md`](../LICENSING.md) | [JSON](entrypoints/LICENSING.agent.json) |\n| [`README.md`](../README.md) | [JSON](entrypoints/README.agent.json) |\n| [`docs/SingleAppBuild.md`](SingleAppBuild.md) | [JSON](SingleAppBuild.agent.json) |\n| [`docs/documentation-structure.md`](documentation-structure.md) | [JSON](documentation-structure.agent.json) |\n",
       "columns": [
         "Document",
         "Agent JSON"
@@ -89,6 +89,10 @@
         [
           "[`AGENT.md`](../AGENT.md)",
           "[JSON](entrypoints/AGENT.agent.json)"
+        ],
+        [
+          "[`LICENSING.md`](../LICENSING.md)",
+          "[JSON](entrypoints/LICENSING.agent.json)"
         ],
         [
           "[`README.md`](../README.md)",
@@ -107,8 +111,8 @@
     {
       "id": "b000009",
       "kind": "html",
-      "start_line": 14,
-      "end_line": 14,
+      "start_line": 15,
+      "end_line": 15,
       "raw": "<!-- workspace-docs:document-map:end -->\n"
     }
   ],
@@ -150,45 +154,59 @@
       },
       {
         "block_id": "b000008",
+        "label": "`LICENSING.md`",
+        "target": "../LICENSING.md",
+        "kind": "relative",
+        "line": 11
+      },
+      {
+        "block_id": "b000008",
+        "label": "JSON",
+        "target": "entrypoints/LICENSING.agent.json",
+        "kind": "relative",
+        "line": 11
+      },
+      {
+        "block_id": "b000008",
         "label": "`README.md`",
         "target": "../README.md",
         "kind": "relative",
-        "line": 11
+        "line": 12
       },
       {
         "block_id": "b000008",
         "label": "JSON",
         "target": "entrypoints/README.agent.json",
         "kind": "relative",
-        "line": 11
+        "line": 12
       },
       {
         "block_id": "b000008",
         "label": "`docs/SingleAppBuild.md`",
         "target": "SingleAppBuild.md",
         "kind": "relative",
-        "line": 12
+        "line": 13
       },
       {
         "block_id": "b000008",
         "label": "JSON",
         "target": "SingleAppBuild.agent.json",
         "kind": "relative",
-        "line": 12
+        "line": 13
       },
       {
         "block_id": "b000008",
         "label": "`docs/documentation-structure.md`",
         "target": "documentation-structure.md",
         "kind": "relative",
-        "line": 13
+        "line": 14
       },
       {
         "block_id": "b000008",
         "label": "JSON",
         "target": "documentation-structure.agent.json",
         "kind": "relative",
-        "line": 13
+        "line": 14
       }
     ],
     "tables": [
@@ -202,6 +220,10 @@
           [
             "[`AGENT.md`](../AGENT.md)",
             "[JSON](entrypoints/AGENT.agent.json)"
+          ],
+          [
+            "[`LICENSING.md`](../LICENSING.md)",
+            "[JSON](entrypoints/LICENSING.agent.json)"
           ],
           [
             "[`README.md`](../README.md)",

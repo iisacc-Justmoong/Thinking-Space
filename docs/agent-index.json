@@ -14,21 +14,28 @@
       "document_id": "urn:iisacc:document:922d8db032009f4387076de1baa51614866cffbd4ee1ffad3c3675bd3ac4774c",
       "source": "AGENT.md",
       "agent_json": "docs/entrypoints/AGENT.agent.json",
-      "source_sha256": "042701272e31743996a008c14011641205fc73b64a50e6803fc7a004866c479e",
+      "source_sha256": "0244fa6d5bc842a159ffc42988eb38abe6650ca15703242272bbf26306b2cdc4",
       "role": "instructions"
+    },
+    {
+      "document_id": "urn:iisacc:document:1cf8b2a04911adcf7a289cace684679ab0190090f2e4107023f3bb0db0f0cd95",
+      "source": "LICENSING.md",
+      "agent_json": "docs/entrypoints/LICENSING.agent.json",
+      "source_sha256": "5a909f6577f7319cc59dc6df661c4e182ce3f31365bc48a1f909fc029ccfe239",
+      "role": "guide"
     },
     {
       "document_id": "urn:iisacc:document:a5d1031a36dfbeff84134a17265b93c603874587a14242d2fdc7c653ea7a7718",
       "source": "README.md",
       "agent_json": "docs/entrypoints/README.agent.json",
-      "source_sha256": "c06e5e004e9e1fb589145c988c9696e2020113b4cdc73cb8ef48344a57bce333",
+      "source_sha256": "8d3ef7c31f4cda50a90c006b983a157e6fa7edd116873a3641cd1c6e9c569d1a",
       "role": "overview"
     },
     {
       "document_id": "urn:iisacc:document:62b5ff61b7044e9d038350e3a76f42afeb713e6017e0af5e4d9515c97933d796",
       "source": "docs/README.md",
       "agent_json": "docs/README.agent.json",
-      "source_sha256": "719da99d75b70ec9b879ca7bb6c946f95a5ad86b191ea36ec0ed55d22f27fc3c",
+      "source_sha256": "2ed8c9c905b65f1253ac01ac9ef9fc3539fda79f71e6b5f812aaf50f6b0e6473",
       "role": "overview"
     },
     {
@@ -42,7 +49,7 @@
       "document_id": "urn:iisacc:document:3a05138cea909da9b0f57569bd9ed1fcf4b4e20723866cdad675b76295d80b72",
       "source": "docs/documentation-structure.md",
       "agent_json": "docs/documentation-structure.agent.json",
-      "source_sha256": "dc2db200107a5ee78330a5de5dc5c8bf8ab8671f91734be896b00548f36193d4",
+      "source_sha256": "7c39a54c285ca730fa99b91fdacef92836e25f45cf8bb9e1dcedce21f31f3e17",
       "role": "guide"
     }
   ],

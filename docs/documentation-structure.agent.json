@@ -10,9 +10,9 @@
   },
   "source": {
     "path": "docs/documentation-structure.md",
-    "sha256": "dc2db200107a5ee78330a5de5dc5c8bf8ab8671f91734be896b00548f36193d4",
-    "bytes": 1661,
-    "line_count": 21,
+    "sha256": "7c39a54c285ca730fa99b91fdacef92836e25f45cf8bb9e1dcedce21f31f3e17",
+    "bytes": 1994,
+    "line_count": 28,
     "encoding": "utf-8",
     "language": "ko"
   },
@@ -151,6 +151,36 @@
       "start_line": 20,
       "end_line": 21,
       "raw": "원본 Markdown을 수정한 뒤 agent JSON과 색인을 함께 재생성하고 검증한다. 외부 원본과 라이선스는 보존한다. 기존 경로가 필요한 이동 문서는 안내 파일로 연결하며 실제 내용은 하위 문서에 둔다.\n<!-- workspace-docs:blueprint:end -->\n"
+    },
+    {
+      "id": "b000014",
+      "kind": "blank",
+      "start_line": 22,
+      "end_line": 22,
+      "raw": "\n"
+    },
+    {
+      "id": "b000015",
+      "kind": "heading",
+      "start_line": 23,
+      "end_line": 23,
+      "raw": "## 라이선스\n",
+      "level": 2,
+      "title": "라이선스"
+    },
+    {
+      "id": "b000016",
+      "kind": "blank",
+      "start_line": 24,
+      "end_line": 24,
+      "raw": "\n"
+    },
+    {
+      "id": "b000017",
+      "kind": "paragraph",
+      "start_line": 25,
+      "end_line": 28,
+      "raw": "이 저장소의 자체 코드와 문서는 `AGPL-3.0-or-later`이다. 전문은\n[LICENSE](../LICENSE)이고, 한국어 정책은 [LICENSING.md](../LICENSING.md)이다.\niiSDK(SDK)는 Apache-2.0이며 AGPL과 양립하므로 제품이 SDK를 링크할 수 있다.\n제3자 라이선스 본문은 바꾸지 않는다.\n"
     }
   ],
   "outline": [
@@ -161,6 +191,14 @@
       "title": "Thinking Space 문서 구조",
       "anchor": "thinking-space-문서-구조",
       "start_line": 1
+    },
+    {
+      "block_id": "b000015",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "라이선스",
+      "anchor": "라이선스",
+      "start_line": 23
     }
   ],
   "indexes": {
@@ -181,7 +219,22 @@
       }
     ],
     "commands": [],
-    "links": [],
+    "links": [
+      {
+        "block_id": "b000017",
+        "label": "LICENSE",
+        "target": "../LICENSE",
+        "kind": "relative",
+        "line": 26
+      },
+      {
+        "block_id": "b000017",
+        "label": "LICENSING.md",
+        "target": "../LICENSING.md",
+        "kind": "relative",
+        "line": 26
+      }
+    ],
     "tables": []
   },
   "provenance": {
