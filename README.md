@@ -28,6 +28,18 @@ reports that absence as an error instead of claiming a passing test suite.
 
 Implementation files and their headers live together under `src/`. Existing feature and platform subdirectories retain their responsibilities. Build configuration, tests, documentation, resources, and maintenance scripts remain at the project root. Configure and build using the repository-local `build/` directory.
 
+## License
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+iisacc products are licensed under the GNU Affero General Public License
+version 3, or any later version. The terms are in [LICENSE](LICENSE). The
+Korean policy is [LICENSING.md](LICENSING.md).
+
+The iiSDK (SDK) is Apache-2.0, which is compatible for products to link.
+First-party folders in this repository that do not carry a license file use
+the root license. Third-party code keeps its own license.
+
 <!-- workspace-docs:readme:start -->
 ## Documentation entry points
 
